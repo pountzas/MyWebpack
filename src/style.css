@@ -7,3 +7,28 @@
 body {
   background-color: rgb(221, 221, 221);
 }
+
+.container {
+  background: white;
+  width: 500px;
+  margin: 100px auto;
+}
+
+.listTitle {
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.listTitle,
+.addList,
+.lilist {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.clearBtn {
+  width: 100%;
+  border: transparent;
+  padding: 15px 10px;
+}
