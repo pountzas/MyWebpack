@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# {project name}
+# To Do List
 
-> {app descriptio}
+> This is an app which allows you to create a list of pending tasks to finish, you can add tasks, mark them as completed, and delete them.
 
 
 ## Built With
@@ -13,7 +13,7 @@
 - Webpack-cli
 ## Live Demo
 
-[My Transactions App Live!](URL)
+<!-- [My Transactions App Live!](URL) -->
 
 ## Getting Started
 
