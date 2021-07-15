@@ -18,6 +18,12 @@ body {
   align-items: center;
 }
 
+button {
+  background: white;
+  border: none;
+  color: white;
+}
+
 .listTitle,
 .addList,
 .listItem {
