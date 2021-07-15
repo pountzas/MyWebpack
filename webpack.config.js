@@ -14,12 +14,11 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    open: true,
-    host: 'localhost',
+    contentBase: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: './src/index.html',
     }),
 
     // Add your plugins here

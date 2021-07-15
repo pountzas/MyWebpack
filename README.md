@@ -1,65 +1,55 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# {project name}
+# To Do List
 
-> {app descriptio}
+> This is an app which allows you to create a list of pending tasks to finish, you can add tasks, mark them as completed, and delete them.
 
 
 ## Built With
-  {to do}
-- Ruby 2.7.3
-- Rails 6.1.3.2
-- Styled with:
-  - Bootstrap 5.0
-- Authentication with:
-  - Devise
-- Tested with:
-  - Rspec
-  - Capybara
-  - shoulda-matchers
-- Database with:
-  - PostgreSQL 13
 
+- HTML
+- CSS
+- Javascript
+- Webpack-cli
 ## Live Demo
 
-[My Transactions App Live!](URL)
-
+<!-- [My Transactions App Live!](URL) -->
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-  {TO DO}
+  
 - Ruby 2.7.3
 - Rails 6.1.3.2
 - Yarn
 - PostgreSQL
 
+
 ### Setup
 
-- On the top of this repo click on the button named "Clone"
-- Copy the HTTP URL or SSH.
-- On the terminal type `git clone <copied-value>` where <copied-value> is the value you copied on the previous step.
-- On the terminal `cd` to the folder you cloned.
+- Use your github account and your terminal to clone this repository to your computer:
 
-### Install
+`https://github.com/pountzas/To-Do-List-JS.git`
 
-- Open the file 'database.yml' on the folder 'config'
-- On development: and on test: change the values of username: and password: to the username and password of your local postgres server.
-- On the terminal type `bundle`
-- On the terminal type `rails db:create`.
-- On the terminal type `rails db:migrate`.
+- Go to the cloned directory:
+`cd To-Do-List-JS`
+
+- Run the following command to install dependencies:
+`npm install`
+
+- Run the following command to compile the files for production:
+`npx webpack serve`
 
 ### Usage
 
-- On the terminal type `rails s`
-- On the browser type `localhost:3000`
+Run dist/index.html in your preferred browser.
 
-### Run tests
+<!-- ### Run tests
 
 - On the terminal `cd` to the folder you just cloned.
-- On the terminal type `rspec`.
+- On the terminal type `rspec`. -->
 
 ## Authors
 
