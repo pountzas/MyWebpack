@@ -20,7 +20,7 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-  {TO DO}
+  
 - Ruby 2.7.3
 - Rails 6.1.3.2
 - Yarn
@@ -40,7 +40,7 @@ To get a local copy up and running follow these simple example steps.
 `npm install`
 
 - Run the following command to compile the files for production:
-`npm run build`
+`npx webpack serve`
 
 ### Usage
 
