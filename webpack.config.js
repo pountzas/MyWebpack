@@ -14,8 +14,7 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    open: true,
-    host: 'localhost',
+    contentBase: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
