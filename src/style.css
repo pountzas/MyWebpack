@@ -34,6 +34,10 @@ button {
   border-bottom: 1px solid lightgray;
 }
 
+.listItem {
+  cursor: move;
+}
+
 .listItem div {
   display: flex;
 }
