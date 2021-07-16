@@ -18,7 +18,7 @@ function listShow() {
 
   for (let i = 0; i < sortList.length; i += 1) {
     document.getElementById('list').insertAdjacentHTML('beforeend', `
-    <div class="listItem">
+    <div class="listItem" draggable="true">
     <div>
       <input class="checkbox" id="item-${i}" type="checkbox">  
       <p>${sortList[i].description}</p>
