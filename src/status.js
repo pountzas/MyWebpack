@@ -1,13 +1,28 @@
-import updateStorage from './storage';
+export default class Status {
+  validation() {
+    if (this.checked === true) {
+      this.nextSibling.style['text-decoration'] = 'line-through';
+      this.nextSibling.style.color = '#909090';
+      // Save in Local Storage
+      Status.saveChanges();
+    } else {
+      this.nextSibling.style['text-decoration'] = 'none';
+      this.nextSibling.style.color = '#000';
+      // Save in Local Storage
+      Status.saveChanges();
+    }
+  }
 
-function checkStatus(sortList, e) {
-  const item = e.target.parentNode.parentNode;
-  const index = Array.prototype.indexOf.call(item.parentNode.children, item);
-  sortList[index].completed = e.target.checked;
-  localStorage.clear();
-  for (let i = 0; i < sortList.length; i += 1) {
-    updateStorage(sortList[i]);
+  static saveChanges() {
+    const newList = [];
+    const listLi = document.querySelectorAll('.item');
+    for (let i = 0; i < listLi.length; i += 1) {
+      newList.push({
+        index: i + 1,
+        description: listLi[i].firstChild.firstChild.nextSibling.value,
+        completed: listLi[i].firstChild.firstChild.checked,
+      });
+    }
+    localStorage.setItem('ToDoList', JSON.stringify(newList));
   }
 }
-
-export default checkStatus;
