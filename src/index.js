@@ -1,6 +1,9 @@
 import './style.css';
-import updateStorage from './storage';
+// import updateStorage from './storage';
 import checkStatus from './status';
+import {
+  dragStart, dragEnd, dragOver, drop,
+} from './drag';
 
 const list = [
   {
@@ -25,6 +28,10 @@ const list = [
   },
 ];
 
+// eslint-disable-next-line no-unused-expressions
+dragStart; dragEnd; dragOver; drop;
+
+// eslint-disable-next-line import/no-mutable-exports
 let sortList = list.sort((a, b) => a.index - b.index);
 
 function listShow() {
@@ -60,44 +67,6 @@ if (localStorage.getItem('index') === null) {
   window.onload = listShow();
 }
 
-let dragged;
-const container = document.getElementById('list');
-document.addEventListener('dragstart', (event) => {
-  dragged = event.target;
-  event.target.style.opacity = 0.5;
-}, false);
-
-document.addEventListener('dragend', (event) => {
-  event.target.style.opacity = '';
-}, false);
-
-document.addEventListener('dragover', (event) => {
-  event.preventDefault();
-}, false);
-
-document.addEventListener('drop', (event) => {
-  event.preventDefault();
-  dragged.parentNode.insertBefore(dragged, event.target);
-  if (dragged !== event.target) {
-    const targetId = event.target.children[0].children[0].id;
-    const draggedId = dragged.children[0].children[0].id;
-    event.target.children[0].children[0].id = draggedId;
-    dragged.children[0].children[0].id = targetId;
-
-    localStorage.clear();
-    for (let i = 0; i < container.children.length; i += 1) {
-      sortList = [];
-      const obj = {
-        description: dragged.parentNode.children[i].firstElementChild.lastElementChild.textContent,
-        completed: dragged.parentNode.children[i].firstElementChild.firstElementChild.checked,
-        index: i,
-      };
-      sortList.push(obj);
-      updateStorage(obj);
-    }
-  }
-}, false);
-
 const checkboxes = document.querySelectorAll('.checkbox');
 
 for (let i = 0; i < checkboxes.length; i += 1) {
@@ -105,3 +74,5 @@ for (let i = 0; i < checkboxes.length; i += 1) {
     checkStatus(event, sortList);
   }, false);
 }
+
+export default sortList;
