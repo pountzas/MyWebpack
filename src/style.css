@@ -19,7 +19,7 @@ body {
 }
 
 button {
-  background: white;
+  background: transparent;
   border: none;
   color: white;
 }
@@ -32,6 +32,10 @@ button {
   padding: 15px 10px;
   margin-bottom: 1px;
   border-bottom: 1px solid lightgray;
+}
+
+.listItem {
+  cursor: move;
 }
 
 .listItem div {
