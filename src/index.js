@@ -1,4 +1,5 @@
 /* eslint-disable import/no-duplicates */
+/* eslint-disable import/no-cycle */
 import './style.css';
 import Status from './status';
 import dragStart from './drag';
