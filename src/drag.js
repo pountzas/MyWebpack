@@ -1,4 +1,5 @@
 import updateStorage from './storage';
+// eslint-disable-next-line import/no-cycle
 import sortList from './index';
 
 let dragged;
@@ -27,7 +28,6 @@ const drop = document.addEventListener('drop', (event) => {
 
     localStorage.clear();
     for (let i = 0; i < container.children.length; i += 1) {
-      sortList = [];
       const obj = {
         description: dragged.parentNode.children[i].firstElementChild.lastElementChild.textContent,
         completed: dragged.parentNode.children[i].firstElementChild.firstElementChild.checked,

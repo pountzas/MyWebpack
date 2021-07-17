@@ -1,9 +1,10 @@
+/* eslint-disable import/no-duplicates */
 import './style.css';
-// import updateStorage from './storage';
-import checkStatus from './status';
-import {
-  dragStart, dragEnd, dragOver, drop,
-} from './drag';
+import Status from './status';
+import dragStart from './drag';
+import dragEnd from './drag';
+import dragOver from './drag';
+import drop from './drag';
 
 const list = [
   {
@@ -67,12 +68,13 @@ if (localStorage.getItem('index') === null) {
   window.onload = listShow();
 }
 
-const checkboxes = document.querySelectorAll('.checkbox');
-
-for (let i = 0; i < checkboxes.length; i += 1) {
-  checkboxes[i].addEventListener('change', (event, sortList) => {
-    checkStatus(event, sortList);
-  }, false);
+function loadCheckboxes() {
+  const checkboxes = document.querySelectorAll('.checks');
+  for (let i = 0; i < checkboxes.length; i += 1) {
+    const status = new Status();
+    checkboxes[i].addEventListener('change', status.validation);
+  }
 }
+document.addEventListener('DOMContentLoaded', loadCheckboxes);
 
 export default sortList;
