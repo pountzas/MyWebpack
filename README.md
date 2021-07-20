@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do List
+# TITLE
 
-> This is an app which allows you to create a list of pending tasks to finish, you can add tasks, mark them as completed, and delete them.
+> This is an app...
 
 
 ## Built With
@@ -21,23 +21,22 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
   
-- Ruby 2.7.3
-- Rails 6.1.3.2
-- Yarn
-- PostgreSQL
-
+- NODE.js
 
 ### Setup
 
 - Use your github account and your terminal to clone this repository to your computer:
 
-`https://github.com/pountzas/To-Do-List-JS.git`
+`repo link ***************`
 
 - Go to the cloned directory:
-`cd To-Do-List-JS`
+`cd repo folder ***********`
 
 - Run the following command to install dependencies:
 `npm install`
+
+- Run the command to run the build:
+`npm run build`
 
 - Run the following command to compile the files for production:
 `npx webpack serve`
