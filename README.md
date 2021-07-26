@@ -1,8 +1,10 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# JS web development scratch project includes.
+- webpack
+- eslint
+- style-lint
 
-# TITLE
 
-> This is an app...
+> This is an app TEMPLATE...
 
 
 ## Built With
