@@ -56,7 +56,7 @@ Run dist/index.html in your preferred browser.
 
 - GitHub: [pountzas](https://github.com/pountzas)
 - Twitter: [@pountzas20](https://twitter.com/pountzas20)
-- LinkedIn: [Nikos Pountzas](https://www.linkedin.com/in/nik
+- LinkedIn: [Nikos Pountzas](https://www.linkedin.com/in/nikos-pountzas/)
 
 ## 🤝 Contributing
 
